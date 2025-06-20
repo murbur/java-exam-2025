@@ -4,6 +4,8 @@
 
 ## Решение
 
+[Ссылка на файл TaskController.java](src/main/java/org/example/controller/TaskController.java)
+
 При запросе на эндпоинт `/task/read`:
 - из Kafka читается первое сообщение с ключом `"test"`
 - затем из Redis извлекается значение по ключу `"test"`
@@ -22,7 +24,7 @@ docker-compose up -d
 ```
 
 ### 3. Запустить Spring Boot приложение
-В IntelliJ открыть и запустить `Application.java`.
+В IntelliJ открыть и запустить `Main.java`.
 
 ### 4. Проверить результат
 Перейти в браузере:
